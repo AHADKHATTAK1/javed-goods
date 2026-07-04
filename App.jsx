@@ -727,8 +727,8 @@ export default function App() {
             <Truck size={18} style={{ color: '#ff8a3d' }} />
           </div>
           <div className="brand-copy">
-            <div className="brand-name" style={{ fontSize: '0.9rem', lineHeight: '1.2', fontWeight: '800' }}>HAJI BARKAT KHAN JADOON</div>
-            <div className="brand-sub" style={{ fontSize: '0.78rem', color: '#ff8a3d', fontWeight: '600' }}>GOODS TRANSPORT</div>
+            <div className="brand-name" style={{ fontSize: '0.9rem', lineHeight: '1.2', fontWeight: '800' }}>JAVEED GOODS</div>
+            <div className="brand-sub" style={{ fontSize: '0.78rem', color: '#ff8a3d', fontWeight: '600' }}>TRANSPORT</div>
           </div>
         </div>
 

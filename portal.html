@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover"/>
-<title>HBK Jadoon — Advanced Fleet Management System</title>
-<meta name="description" content="Haji Barkat Khan Jadoon Goods Transport — advanced fleet, salary, invoices, attendance, analytics & finance portal."/>
+<title>Javeed Goods Transport — Advanced Fleet Management System</title>
+<meta name="description" content="Javeed Goods Transport — advanced fleet, salary, invoices, attendance, analytics & finance portal."/>
 <!-- PWA Integration -->
 <link rel="manifest" href="manifest.json"/>
 <meta name="theme-color" content="#07111f"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-<link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192' fill='%23ff8a3d'><rect width='192' height='192' rx='40' fill='%2307111f'/><text x='96' y='125' font-family='sans-serif' font-size='90' font-weight='900' text-anchor='middle' fill='%23ff8a3d'>H</text></svg>"/>
+<link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192' fill='%23ff8a3d'><rect width='192' height='192' rx='40' fill='%2307111f'/><text x='96' y='125' font-family='sans-serif' font-size='90' font-weight='900' text-anchor='middle' fill='%23ff8a3d'>J</text></svg>"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -670,7 +670,7 @@ a{color:var(--accent);text-decoration:none}
             <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm12 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-7l2.25 3H17V11.5h2.5z"/>
           </svg>
         </div>
-        <div><div class="brand-name" id="sidebarCompany" style="letter-spacing:0.02em;font-size:0.86rem;font-weight:900;color:#fff">HBK JADOON</div><div class="brand-sub" style="letter-spacing:0.18em;font-size:0.6rem;color:#ff9e22;font-weight:800">LOGISTICS GROUP</div></div>
+        <div><div class="brand-name" id="sidebarCompany" style="letter-spacing:0.02em;font-size:0.86rem;font-weight:900;color:#fff">JAVEED GOODS</div><div class="brand-sub" style="letter-spacing:0.18em;font-size:0.6rem;color:#ff9e22;font-weight:800">TRANSPORT</div></div>
       </div>
       <nav class="nav" id="nav"></nav>
     </div>
@@ -715,13 +715,13 @@ a{color:var(--accent);text-decoration:none}
     <div class="ai-header">
       <div class="ai-title">
         <span class="ai-status"></span>
-        <span style="font-weight:900;color:#fff">Jadoon AI Dispatcher</span>
+        <span style="font-weight:900;color:#fff">Javeed AI Dispatcher</span>
       </div>
       <button class="icon-btn" onclick="toggleAIWindow()" style="font-size:0.82rem;color:var(--muted)">✕</button>
     </div>
     <div class="ai-messages" id="aiMessages">
       <div class="ai-msg bot">
-        Assalam-o-Alaikum! I am **Jadoon AI**, your logistics assistant. I can check shipments, search inventory, calculate profit margins, or optimize motorway routes. Ask me anything!
+        Assalam-o-Alaikum! I am **Javeed AI**, your logistics assistant. I can check shipments, search inventory, calculate profit margins, or optimize motorway routes. Ask me anything!
       </div>
     </div>
     <div class="ai-suggestions">
@@ -731,7 +731,7 @@ a{color:var(--accent);text-decoration:none}
       <button class="ai-sug-btn" onclick="sendAISuggestion('What is our net profit?')">💵 Net profit</button>
     </div>
     <div class="ai-input-wrap">
-      <input type="text" id="aiInput" placeholder="Ask Jadoon AI..." onkeydown="handleAIKeydown(event)">
+      <input type="text" id="aiInput" placeholder="Ask Javeed AI..." onkeydown="handleAIKeydown(event)">
       <button class="btn btn-primary btn-sm" onclick="submitAIQuery()" style="border-radius:10px;padding:.5rem .8rem">Send</button>
     </div>
   </div>
@@ -744,12 +744,12 @@ a{color:var(--accent);text-decoration:none}
 const SK='hbk_adv_v5';
 
 const SEED={
-  settings:{companyName:'HBK JADOON LOGISTICS',companyFull:'HBK Jadoon Logistics Group & Goods Transport',address:'Plot 24, Hub Center, Karachi',phone:'021-3456789',email:'info@hbkjadoon.pk',currency:'Rs',fuelRate:285,taxRate:0,logo:'HBK'},
+  settings:{companyName:'JAVEED GOODS TRANSPORT',companyFull:'Javeed Goods Transport & Logistics Group',address:'Plot 24, Hub Center, Karachi',phone:'021-3456789',email:'info@javeedgoods.pk',currency:'Rs',fuelRate:285,taxRate:0,logo:'JGT'},
   shipments:[
-    {id:'WB-48213',client:'Northbridge Foods',origin:'Lahore',dest:'Karachi',status:'in_transit',eta:'2:40 PM',progress:.62,driver:'Ali Raza',vehicle:'TRK-0731',cargo:'Dry goods',weight:2400,freightCharge:62000,notes:''},
-    {id:'WB-48190',client:'Calder Steel Co.',origin:'Islamabad',dest:'Peshawar',status:'delayed',eta:'11:15 AM',progress:.41,driver:'Imran Khan',vehicle:'TRK-0559',cargo:'Steel rods',weight:5000,freightCharge:48000,notes:'Road block near Attock'},
-    {id:'WB-48177',client:'Verde Pharma',origin:'Faisalabad',dest:'Quetta',status:'delivered',eta:'Delivered 8:52 AM',progress:1,driver:'Sajid Mehmood',vehicle:'TRK-0416',cargo:'Medicine',weight:800,freightCharge:47500,notes:''},
-    {id:'WB-48241',client:'Hallstrom Furniture',origin:'Multan',dest:'Rawalpindi',status:'scheduled',eta:'6:05 PM',progress:0,driver:'Zubair Ahmed',vehicle:'TRK-0820',cargo:'Furniture',weight:3200,freightCharge:38000,notes:''},
+    {id:'WB-48213',client:'Northbridge Foods',origin:'Lahore',dest:'Karachi',status:'in_transit',eta:'2:40 PM',progress:.62,driver:'Ali Raza',vehicle:'TRK-0731',cargo:'Dry goods',weight:2400,freightCharge:62000,notes:'',billNo:'BIL-48213',billDate:'02-Jul-2026',partyInvoiceNo:'INV-1092',partyInvoiceDate:'02-Jul-2026',detention:'No',items:'Beverages / Snacks',containerQty:'1x40ft',emptyPickupTo:'SAPT Terminal',loadContainer:'SAPT Terminal to Lahore Hub'},
+    {id:'WB-48190',client:'Calder Steel Co.',origin:'Islamabad',dest:'Peshawar',status:'delayed',eta:'11:15 AM',progress:.41,driver:'Imran Khan',vehicle:'TRK-0559',cargo:'Steel rods',weight:5000,freightCharge:48000,notes:'Road block near Attock',billNo:'BIL-48190',billDate:'30-Jun-2026',partyInvoiceNo:'INV-8871',partyInvoiceDate:'29-Jun-2026',detention:'Pending',items:'Steel Beams',containerQty:'2x20ft',emptyPickupTo:'KICT Terminal',loadContainer:'KICT Terminal to Islamabad Hub'},
+    {id:'WB-48177',client:'Verde Pharma',origin:'Faisalabad',dest:'Quetta',status:'delivered',eta:'Delivered 8:52 AM',progress:1,driver:'Sajid Mehmood',vehicle:'TRK-0416',cargo:'Medicine',weight:800,freightCharge:47500,notes:'',billNo:'BIL-48177',billDate:'28-Jun-2026',partyInvoiceNo:'INV-7651',partyInvoiceDate:'28-Jun-2026',detention:'No',items:'Medical Supplies',containerQty:'1x20ft',emptyPickupTo:'QICT Terminal',loadContainer:'QICT Terminal to Quetta Hub'},
+    {id:'WB-48241',client:'Hallstrom Furniture',origin:'Multan',dest:'Rawalpindi',status:'scheduled',eta:'6:05 PM',progress:0,driver:'Zubair Ahmed',vehicle:'TRK-0820',cargo:'Furniture',weight:3200,freightCharge:38000,notes:'',billNo:'',billDate:'',partyInvoiceNo:'',partyInvoiceDate:'',detention:'',items:'',containerQty:'',emptyPickupTo:'',loadContainer:''},
   ],
   stock:[
     {sku:'PLT-1180',item:'Standard pallets (48x40)',warehouse:'Karachi DC',qty:412,reorder:150,unit:'pcs'},
@@ -785,19 +785,19 @@ const SEED={
     {id:'TXN-9013',type:'income',desc:'Freight — Hallstrom Furniture',date:'Apr 10',amount:38000,category:'Freight',month:'Apr',year:2026},
   ],
   staff:[
-    {id:'STF-001',name:'Ali Raza',email:'ali@hbkjadoon.pk',role:'Driver',access:'Staff',status:'active',phone:'0301-1234567',cnic:'35202-1234567-1',joined:'Jan 2022',salary:38000,allowance:5000,initials:'AR'},
-    {id:'STF-002',name:'Imran Khan',email:'imran@hbkjadoon.pk',role:'Driver',access:'Staff',status:'active',phone:'0302-2345678',cnic:'35202-2345678-2',joined:'Mar 2021',salary:40000,allowance:5000,initials:'IK'},
-    {id:'STF-003',name:'Sajid Mehmood',email:'sajid@hbkjadoon.pk',role:'Driver',access:'Staff',status:'active',phone:'0303-3456789',cnic:'35202-3456789-3',joined:'Jun 2020',salary:42000,allowance:5000,initials:'SM'},
-    {id:'STF-004',name:'Zubair Ahmed',email:'zubair@hbkjadoon.pk',role:'Dispatcher',access:'Staff',status:'active',phone:'0304-4567890',cnic:'35202-4567890-4',joined:'Sep 2022',salary:35000,allowance:4000,initials:'ZA'},
-    {id:'STF-005',name:'Hina Noor',email:'hina@hbkjadoon.pk',role:'Warehouse Lead',access:'Staff',status:'suspended',phone:'0305-5678901',cnic:'35202-5678901-5',joined:'Feb 2023',salary:30000,allowance:3000,initials:'HN'},
-    {id:'STF-006',name:'Barkat Manager',email:'barkat@hbkjadoon.pk',role:'Operations Manager',access:'Admin',status:'active',phone:'0300-0000001',cnic:'35202-0000001-9',joined:'Jan 2018',salary:80000,allowance:15000,initials:'BM'},
+    {id:'STF-001',name:'Ali Raza',email:'ali@javeedgoods.pk',role:'Driver',access:'Staff',status:'active',phone:'0301-1234567',cnic:'35202-1234567-1',joined:'Jan 2022',salary:38000,allowance:5000,initials:'AR'},
+    {id:'STF-002',name:'Imran Khan',email:'imran@javeedgoods.pk',role:'Driver',access:'Staff',status:'active',phone:'0302-2345678',cnic:'35202-2345678-2',joined:'Mar 2021',salary:40000,allowance:5000,initials:'IK'},
+    {id:'STF-003',name:'Sajid Mehmood',email:'sajid@javeedgoods.pk',role:'Driver',access:'Staff',status:'active',phone:'0303-3456789',cnic:'35202-3456789-3',joined:'Jun 2020',salary:42000,allowance:5000,initials:'SM'},
+    {id:'STF-004',name:'Zubair Ahmed',email:'zubair@javeedgoods.pk',role:'Dispatcher',access:'Staff',status:'active',phone:'0304-4567890',cnic:'35202-4567890-4',joined:'Sep 2022',salary:35000,allowance:4000,initials:'ZA'},
+    {id:'STF-005',name:'Hina Noor',email:'hina@javeedgoods.pk',role:'Warehouse Lead',access:'Staff',status:'suspended',phone:'0305-5678901',cnic:'35202-5678901-5',joined:'Feb 2023',salary:30000,allowance:3000,initials:'HN'},
+    {id:'STF-006',name:'Javeed Manager',email:'manager@javeedgoods.pk',role:'Operations Manager',access:'Admin',status:'active',phone:'0300-0000001',cnic:'35202-0000001-9',joined:'Jan 2018',salary:80000,allowance:15000,initials:'JM'},
   ],
   salaries:[
     {id:'SAL-001',staffId:'STF-001',staffName:'Ali Raza',month:'June',year:2026,basic:38000,allowance:5000,deduction:0,total:43000,status:'paid',paidDate:'Jun 30',notes:''},
     {id:'SAL-002',staffId:'STF-002',staffName:'Imran Khan',month:'June',year:2026,basic:40000,allowance:5000,deduction:2000,total:43000,status:'paid',paidDate:'Jun 30',notes:'Deduction: late penalty'},
     {id:'SAL-003',staffId:'STF-003',staffName:'Sajid Mehmood',month:'June',year:2026,basic:42000,allowance:5000,deduction:0,total:47000,status:'unpaid',paidDate:'',notes:''},
     {id:'SAL-004',staffId:'STF-004',staffName:'Zubair Ahmed',month:'June',year:2026,basic:35000,allowance:4000,deduction:0,total:39000,status:'unpaid',paidDate:'',notes:''},
-    {id:'SAL-005',staffId:'STF-006',staffName:'Barkat Manager',month:'June',year:2026,basic:80000,allowance:15000,deduction:0,total:95000,status:'paid',paidDate:'Jun 30',notes:''},
+    {id:'SAL-005',staffId:'STF-006',staffName:'Javeed Manager',month:'June',year:2026,basic:80000,allowance:15000,deduction:0,total:95000,status:'paid',paidDate:'Jun 30',notes:''},
   ],
   vehicles:[
     {id:'TRK-0731',type:'Truck',make:'Hino',model:'700 Series',year:2020,plate:'LEA-4521',status:'active',driver:'Ali Raza',km:142000,nextService:150000},
@@ -833,9 +833,9 @@ const SEED={
   ],
   attendance:[],
   activityLog:[
-    {id:'ACT-001',action:'Shipment delivered',module:'Shipments',details:'WB-48177 marked delivered',by:'admin@hbkjadoon.pk',at:'Jun 30, 2026 8:52 AM'},
-    {id:'ACT-002',action:'Salary paid',module:'Salaries',details:'Ali Raza June 2026 — Rs 43,000',by:'admin@hbkjadoon.pk',at:'Jun 30, 2026 5:00 PM'},
-    {id:'ACT-003',action:'Invoice created',module:'Invoices',details:'INV-0002 for Northbridge Foods — Rs 62,000',by:'admin@hbkjadoon.pk',at:'Jun 30, 2026 6:00 PM'},
+    {id:'ACT-001',action:'Shipment delivered',module:'Shipments',details:'WB-48177 marked delivered',by:'admin@javeedgoods.pk',at:'Jun 30, 2026 8:52 AM'},
+    {id:'ACT-002',action:'Salary paid',module:'Salaries',details:'Ali Raza June 2026 — Rs 43,000',by:'admin@javeedgoods.pk',at:'Jun 30, 2026 5:00 PM'},
+    {id:'ACT-003',action:'Invoice created',module:'Invoices',details:'INV-0002 for Northbridge Foods — Rs 62,000',by:'admin@javeedgoods.pk',at:'Jun 30, 2026 6:00 PM'},
   ],
 };
 
@@ -1051,8 +1051,8 @@ function loginView(){
   $('#login').innerHTML=`
   <div class="login-card">
     <div class="login-copy">
-      <div class="kicker">HBK JADOON // Advanced Fleet v5</div>
-      <div class="hero" style="margin:1rem 0 .5rem">Haji Barkat Khan<br>Jadoon <span style="color:var(--accent)">Goods Transport</span></div>
+      <div class="kicker">JAVEED GOODS // Advanced Fleet v5</div>
+      <div class="hero" style="margin:1rem 0 .5rem">Javeed<br><span style="color:var(--accent)">Goods Transport</span></div>
       <p class="muted" style="font-size:.9rem;line-height:1.65;max-width:380px">Pakistan's most complete transport management system. Shipments, salaries, invoices, attendance, fleet analytics — all in one place.</p>
       <div class="panel" style="margin-top:10px;max-width:380px">
         <div class="section-label" style="margin-bottom:10px">Modules included</div>
@@ -1108,9 +1108,9 @@ function loginView(){
       state.authenticated=true;state.role=matchedUser.access;
       state.email=matchedUser.email;state.displayName=matchedUser.name;
     } else {
-      if(email==='admin@hbkjadoon.pk' && password==='admin'){
+      if(email==='admin@javeedgoods.pk' && password==='admin'){
         state.authenticated=true;state.role='Admin';
-        state.email=email;state.displayName='Barkat Manager';
+        state.email=email;state.displayName='Javeed Manager';
       } else if(email==='demo@test.pk' && password==='demo'){
         state.authenticated=true;state.role='Admin';
         state.email=email;state.displayName='Demo Manager';
@@ -1177,7 +1177,7 @@ function navView(){
   }
   $('#roleNote').textContent=isAdmin?'Full operations access':'Staff — limited access';
   $('#signOut').onclick=()=>{state.authenticated=false;state.email='';state.displayName='';saveState();render()};
-  if($('#sidebarCompany'))$('#sidebarCompany').textContent=state.settings?.companyName||'HBK JADOON';
+  if($('#sidebarCompany'))$('#sidebarCompany').textContent=state.settings?.companyName||'JAVEED GOODS';
   renderMobileNavBar();
 }
 
@@ -1541,7 +1541,7 @@ function shipmentsView(){
   const q=state.search.trim().toLowerCase();
   // Staff only see their own shipments; Admin sees all
   const allShips=isAdmin?state.shipments:state.shipments.filter(s=>!person||s.driver===person.name);
-  const filtered=allShips.filter(s=>!q||[s.id,s.client,s.origin,s.dest,s.driver,s.vehicle].some(v=>(v||'').toLowerCase().includes(q)));
+  const filtered=allShips.filter(s=>!q||[s.id,s.client,s.origin,s.dest,s.driver,s.vehicle,s.billNo,s.partyInvoiceNo].some(v=>(v||'').toLowerCase().includes(q)));
   const selected=filtered.find(s=>s.id===state.selectedShipment)||filtered[0];
   if(!filtered.length)return `<div class="panel"><div class="section-head"><div class="section-label">Shipments</div>${isAdmin?'<button class="btn btn-primary" data-open="shipment">+ New shipment</button>':''}</div><div class="empty-state"><span class="icon">🚚</span><p>${isAdmin?'No shipments yet':'No shipments assigned to you yet'}</p></div></div>`;
   const sm=STATUS_META[selected?.status]||STATUS_META.pending;
@@ -1586,6 +1586,18 @@ function shipmentsView(){
       <div class="row"><span class="muted">Cargo</span><strong>${selected.cargo||'—'}</strong></div>
       <div class="row"><span class="muted">Weight</span><strong>${selected.weight?selected.weight+' kg':'—'}</strong></div>
       <div class="row"><span class="muted">Freight charge</span><strong style="color:var(--good)">${money(selected.freightCharge||0)}</strong></div>
+      
+      <div style="margin: 16px 0; border-top: 1px dashed var(--line); padding-top: 14px; display: grid; gap: 8px;">
+        <div class="section-label" style="font-size: 0.72rem; color: var(--accent); margin-bottom: 4px;">📋 Shipping & Billing Details</div>
+        <div class="row"><span class="muted">Bill# / Date</span><strong>${selected.billNo||'—'} ${selected.billDate ? `(${selected.billDate})` : ''}</strong></div>
+        <div class="row"><span class="muted">Party Invoice# / Date</span><strong>${selected.partyInvoiceNo||'—'} ${selected.partyInvoiceDate ? `(${selected.partyInvoiceDate})` : ''}</strong></div>
+        <div class="row"><span class="muted">Detention</span><strong>${selected.detention||'—'}</strong></div>
+        <div class="row"><span class="muted">Items</span><strong>${selected.items||'—'}</strong></div>
+        <div class="row"><span class="muted">Container Qty</span><strong>${selected.containerQty||'—'}</strong></div>
+        <div class="row"><span class="muted">Empty Pickup To</span><strong>${selected.emptyPickupTo||'—'}</strong></div>
+        <div class="row"><span class="muted">Load Container</span><strong>${selected.loadContainer||'—'}</strong></div>
+      </div>
+
       ${selected.notes?`<div class="row"><span class="muted">Notes</span><span style="font-size:.85rem">${selected.notes}</span></div>`:''}
       <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
         ${selected.status!=='delivered'?`<button class="btn btn-success btn-sm" data-approve-ship="${selected.id}">✓ Mark Delivered</button>`:''}
@@ -2418,6 +2430,14 @@ function buildModalHTML(){
     <div class="field-row"><div class="field"><label>Driver</label><input id="shipDriver" value="${editShip.driver||''}" placeholder="Driver name"></div><div class="field"><label>Vehicle</label><select id="shipVehicle">${vOpts}</select></div></div>
     <div class="field-row"><div class="field"><label>ETA</label><input id="shipEta" value="${editShip.eta||''}" placeholder="4:30 PM"></div><div class="field"><label>Weight (kg)</label><input id="shipWeight" type="number" value="${editShip.weight||0}"></div></div>
     <div class="field-row"><div class="field"><label>Freight charge (Rs)</label><input id="shipFreight" type="number" value="${editShip.freightCharge||0}"></div><div class="field"><label>Status</label><select id="shipStatus">${['scheduled','in_transit','delayed','delivered'].map(s=>`<option value="${s}" ${(editShip.status||'scheduled')===s?'selected':''}>${STATUS_META[s][0]}</option>`).join('')}</select></div></div>
+    
+    <div style="border-top:1px dashed var(--line); padding-top:10px; margin-top:5px; margin-bottom:5px;"></div>
+    <div class="field-row"><div class="field"><label>Bill#</label><input id="shipBillNo" value="${editShip.billNo||''}" placeholder="BIL-XXXXX"></div><div class="field"><label>Bill Date</label><input id="shipBillDate" value="${editShip.billDate||''}" placeholder="DD-MMM-YYYY"></div></div>
+    <div class="field-row"><div class="field"><label>Party Invoice #</label><input id="shipPartyInvoiceNo" value="${editShip.partyInvoiceNo||''}" placeholder="INV-XXXXX"></div><div class="field"><label>Party Invoice Date</label><input id="shipPartyInvoiceDate" value="${editShip.partyInvoiceDate||''}" placeholder="DD-MMM-YYYY"></div></div>
+    <div class="field-row"><div class="field"><label>Detention</label><input id="shipDetention" value="${editShip.detention||''}" placeholder="e.g. 2 Days / Rs 5000"></div><div class="field"><label>Items</label><input id="shipItems" value="${editShip.items||''}" placeholder="e.g. Beverages"></div></div>
+    <div class="field-row"><div class="field"><label>Container Quantity</label><input id="shipContainerQty" value="${editShip.containerQty||''}" placeholder="e.g. 1x40ft"></div><div class="field"><label>Empty Pickup to</label><input id="shipEmptyPickupTo" value="${editShip.emptyPickupTo||''}" placeholder="Pickup location"></div></div>
+    <div class="field"><label>Load container</label><input id="shipLoadContainer" value="${editShip.loadContainer||''}" placeholder="Terminal/destination loader"></div>
+    
     <div class="field"><label>Notes</label><textarea id="shipNotes" rows="2">${editShip.notes||''}</textarea></div>
     <div class="field"><label>Attach Delivery Slip / POD</label><input type="file" id="shipSlipInput" accept="image/*,application/pdf" style="background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.15);border-radius:10px;padding:.5rem;width:100%;color:var(--muted);font-size:.82rem"></div>`,
     `<button class="btn" data-close="shipment">Cancel</button><button class="btn btn-primary" id="saveShipment">${m._editShip!=null?'Save changes':'Add shipment'}</button>`)}
@@ -2524,7 +2544,7 @@ function wireModals(){
       }
     }
 
-    const obj={id:m._editShip!=null?state.shipments[m._editShip].id:`WB-${pad(state.shipments.length+49000)}`,client,origin:$('#shipOrigin').value.trim(),dest:$('#shipDest').value.trim(),status:$('#shipStatus').value,eta:$('#shipEta').value.trim(),driver:$('#shipDriver').value.trim(),vehicle:$('#shipVehicle').value,cargo:$('#shipCargo').value.trim(),weight:+$('#shipWeight').value||0,freightCharge:+$('#shipFreight').value||0,notes:$('#shipNotes').value.trim(),progress:{'scheduled':0,'in_transit':.3,'delayed':.3,'delivered':1}[$('#shipStatus').value]||0,slip};
+    const obj={id:m._editShip!=null?state.shipments[m._editShip].id:`WB-${pad(state.shipments.length+49000)}`,client,origin:$('#shipOrigin').value.trim(),dest:$('#shipDest').value.trim(),status:$('#shipStatus').value,eta:$('#shipEta').value.trim(),driver:$('#shipDriver').value.trim(),vehicle:$('#shipVehicle').value,cargo:$('#shipCargo').value.trim(),weight:+$('#shipWeight').value||0,freightCharge:+$('#shipFreight').value||0,notes:$('#shipNotes').value.trim(),progress:{'scheduled':0,'in_transit':.3,'delayed':.3,'delivered':1}[$('#shipStatus').value]||0,slip,billNo:$('#shipBillNo').value.trim(),billDate:$('#shipBillDate').value.trim(),partyInvoiceNo:$('#shipPartyInvoiceNo').value.trim(),partyInvoiceDate:$('#shipPartyInvoiceDate').value.trim(),detention:$('#shipDetention').value.trim(),items:$('#shipItems').value.trim(),containerQty:$('#shipContainerQty').value.trim(),emptyPickupTo:$('#shipEmptyPickupTo').value.trim(),loadContainer:$('#shipLoadContainer').value.trim()};
     if(m._editShip!=null)state.shipments[m._editShip]=obj;else state.shipments.unshift(obj);
     state.selectedShipment=obj.id;state.modals.shipment=false;delete state.modals._editShip;
     logActivity(m._editShip!=null?'Shipment updated':'Shipment added','Shipments',`${obj.id} — ${obj.client}`);
@@ -2551,7 +2571,7 @@ function wireModals(){
   // STAFF
   if(m.staff&&$('#saveStaff'))$('#saveStaff').onclick=()=>{
     const name=$('#staffName').value.trim();if(!name)return toast('Name required','bad');
-    const email=$('#staffEmail').value.trim()||name.toLowerCase().replace(/\s+/g,'.')+'@hbkjadoon.pk';
+    const email=$('#staffEmail').value.trim()||name.toLowerCase().replace(/\s+/g,'.')+'@javeedgoods.pk';
     const initials=name.split(/\s+/).slice(0,2).map(p=>p[0].toUpperCase()).join('');
     const obj={id:m._editStaff!=null?state.staff[m._editStaff].id:`STF-${pad(state.staff.length+10)}`,name,email,role:$('#staffRole').value.trim()||'Driver',access:$('#staffAccess').value,status:'active',phone:$('#staffPhone').value.trim(),cnic:$('#staffCnic').value.trim(),joined:$('#staffJoined').value.trim(),salary:+$('#staffSalary').value||0,allowance:+$('#staffAllowance').value||0,initials,password:$('#staffPassword').value.trim()||'123456'};
     if(m._editStaff!=null)state.staff[m._editStaff]=obj;else state.staff.unshift(obj);
@@ -2738,7 +2758,7 @@ function printInvoice(inv){
   win.document.write(`<html><head><title>Invoice ${inv.id}</title>${printBase}</head><body>
   <div class="header">
     <div>
-      <h1>${s.companyFull||'Haji Barkat Khan Jadoon Goods Transport'}</h1>
+      <h1>${s.companyFull||'Javeed Goods Transport'}</h1>
       <div class="sub">${s.address||''} | ${s.phone||''} | ${s.email||''}</div>
     </div>
     <div style="text-align:right">
@@ -2775,7 +2795,7 @@ function printSalarySlip(sal){
   const win=window.open('','_blank');
   win.document.write(`<html><head><title>Salary Slip — ${sal.staffName}</title>${printBase}</head><body>
   <div class="header">
-    <div><h1>${s.companyFull||'Haji Barkat Khan Jadoon Goods Transport'}</h1><div class="sub">SALARY SLIP — ${sal.month} ${sal.year}</div></div>
+    <div><h1>${s.companyFull||'Javeed Goods Transport'}</h1><div class="sub">SALARY SLIP — ${sal.month} ${sal.year}</div></div>
     <div style="text-align:right"><div style="font-size:1.4rem;font-weight:900;color:#ff8a3d">SALARY SLIP</div><div class="sub">${sal.id}</div></div>
   </div>
   <table><tr><th colspan="2">Employee Details</th><th colspan="2">Employment Info</th></tr>
@@ -2806,7 +2826,7 @@ function printReport(){
   const s=state.settings;
   win.document.write(`<html><head><title>Fleet Report</title>${printBase}</head><body>
   <div class="header">
-    <div><h1>${s.companyFull||'Haji Barkat Khan Jadoon Goods Transport'}</h1><div class="sub">Fleet Management Report</div></div>
+    <div><h1>${s.companyFull||'Javeed Goods Transport'}</h1><div class="sub">Fleet Management Report</div></div>
     <div style="text-align:right"><div class="sub">Generated: ${new Date().toLocaleString()}</div></div>
   </div>
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0">
@@ -2859,7 +2879,7 @@ function purgeDemoData(){
       receivingLines: {},
       transactions: [],
       staff: [
-        {id:'STF-001',name:'Barkat Manager',email:state.email||'admin@hbkjadoon.pk',role:'Operations Manager',access:'Admin',status:'active',phone:'0300-0000001',cnic:'35202-0000001-9',joined:new Date().toLocaleDateString('en-GB',{month:'short',year:'numeric'}),salary:80000,allowance:15000,initials:'BM'}
+        {id:'STF-001',name:'Javeed Manager',email:state.email||'admin@javeedgoods.pk',role:'Operations Manager',access:'Admin',status:'active',phone:'0300-0000001',cnic:'35202-0000001-9',joined:new Date().toLocaleDateString('en-GB',{month:'short',year:'numeric'}),salary:80000,allowance:15000,initials:'JM'}
       ],
       salaries: [],
       vehicles: [],
@@ -3069,7 +3089,7 @@ function renderContent(){
 }
 
 // ══════════════════════════════════════════════════════
-//  JADOON AI AGENT ENGINE
+//  JAVEED AI AGENT ENGINE
 // ══════════════════════════════════════════════════════
 function toggleAIWindow() {
   const win = $('#aiWindow');
@@ -3119,7 +3139,7 @@ async function submitAIQuery() {
   const loader = document.createElement('div');
   loader.className = 'ai-msg bot';
   loader.style.opacity = '0.7';
-  loader.innerHTML = '✍️ Jadoon AI is thinking...';
+  loader.innerHTML = '✍️ Javeed AI is thinking...';
   box.appendChild(loader);
   box.scrollTop = box.scrollHeight;
 
@@ -3149,7 +3169,7 @@ async function callGeminiAPI(apiKey, query) {
   const totalIncome = state.transactions.filter(t=>t.type==='income').reduce((a,b)=>a+b.amount,0);
   const totalExpense = state.transactions.filter(t=>t.type==='expense').reduce((a,b)=>a+b.amount,0);
 
-  const context = `You are Jadoon AI, the official intelligent voice of HBK Jadoon Goods Transport.
+  const context = `You are Javeed AI, the official intelligent voice of Javeed Goods Transport.
 Current Database Metrics:
 - Active Shipments: ${activeShips.length} (${activeShips.map(s=>`${s.id} to ${s.dest}`).join(', ')})
 - Low Stock Items: ${lowStock.length} (${lowStock.map(i=>`${i.name} [Qty: ${i.qty}]`).join(', ')})
@@ -3234,7 +3254,7 @@ function getLocalAIResponse(q) {
 
   if (query.includes('staff') || query.includes('driver') || query.includes('employee') || query.includes('team')) {
     const activeStaff = state.staff.filter(p=>p.status==='active');
-    return `👥 **HBK Team Summary:**\n\n` +
+    return `👥 **Javeed Team Summary:**\n\n` +
            `• Total Employees registered: **${state.staff.length}**\n` +
            `• Active on-duty staff: **${activeStaff.length}**\n\n` +
            `You can manage assignments or update driver logins in the *Staff directory* tab.`;
@@ -3250,7 +3270,7 @@ function getLocalAIResponse(q) {
            `Your data is currently encrypted and saved in your local browser storage (**localStorage**). To keep it permanently safe, please go to **Settings** and click **Export Full Backup (JSON)** or connect the Google Drive auto-sync script detailed in the README guide.`;
   }
 
-  return `Jadoon AI Dispatcher Sahib! I am ready to help. You can ask me:\n\n` +
+  return `Javeed AI Dispatcher Sahib! I am ready to help. You can ask me:\n\n` +
          `1. *"Show active shipments"* to see live trips.\n` +
          `2. *"Check system health"* for terminal checks.\n` +
          `3. *"Which items are low in stock?"* to see warehouse alerts.\n` +

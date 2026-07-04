@@ -1,6 +1,6 @@
-# 🚛 Haji Barkat Khan (HBK) Jadoon — Advanced Fleet Management System
+# 🚛 Javeed Goods Transport — Advanced Fleet Management System
 
-Welcome to the **HBK Jadoon Goods Transport — Advanced Fleet & Finance Portal**. 
+Welcome to the **Javeed Goods Transport — Advanced Fleet & Finance Portal**. 
 
 This application is a premium, client-side Single Page Application (SPA) designed to run entirely in the browser with **zero dependencies**. It stores all data securely in your local browser (`localStorage`) and allows easy export/import for cloud backups.
 
@@ -61,13 +61,13 @@ You can configure the application to send automatic email notifications (e.g., w
        htmlBody: `
          <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto">
            <div style="background:#07111f;color:#fff;padding:20px;border-radius:12px 12px 0 0">
-             <h2 style="margin:0;color:#ff8a3d">🚛 HBK Jadoon Goods Transport</h2>
+             <h2 style="margin:0;color:#ff8a3d">🚛 Javeed Goods Transport</h2>
              <p style="margin:4px 0 0;color:#97a3c4;font-size:13px">Fleet Management System</p>
            </div>
            <div style="background:#f8f9fa;padding:24px;border-radius:0 0 12px 12px">
              <p style="font-size:16px;font-weight:600;color:#333">${data.message}</p>
              <pre style="background:#e9ecef;padding:14px;border-radius:8px;font-size:13px">${data.details||''}</pre>
-             <p style="color:#999;font-size:12px;margin-top:20px">Sent by HBK Fleet Management System — ${new Date().toLocaleString()}</p>
+             <p style="color:#999;font-size:12px;margin-top:20px">Sent by Javeed Goods Transport Fleet Management System — ${new Date().toLocaleString()}</p>
            </div>
          </div>
        `
